@@ -2,13 +2,11 @@ spring:
   application:
     name: micro-product
   datasource:
-    url: jdbc:postgresql://localhost:5432/micro-product
+    url: micro-product.cjeiggysyo1q.us-east-2.rds.amazonaws.com
     username: velizweb
-    password: 123456
+    password: 4L34Nd3r123$$
   jpa:
     database: POSTGRESQL
     hibernate:
       ddl-auto: create
       database-platform: org.hibernate.dialect.PostgreSQLDialect
-server:
-  port: 8083
