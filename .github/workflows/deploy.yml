@@ -16,4 +16,7 @@ jobs:
           java-version: '21'
           distribution: 'temurin'
       - name: Analyze with SonarCloud
+        env:
+          DB_URL: ${{ secrets.DB_URL }}
+          DB_PASSWORD: ${{ secrets.DB_PASSWORD }}
         run: mvn clean verify sonar:sonar -Dsonar.token=${{secrets.SONAR_TOKEN}}
